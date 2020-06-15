@@ -3,7 +3,7 @@ import { StyleSheet, View, Platform, Image } from 'react-native';
  
 import WebView from 'react-native-webview'
  
-import renderHTML from './assets/html/index.html'
+import renderHTML from './assets/html/index.html' 
 
 //const test = Platform.OS === 'ios' ? require('./html/index.html') : {uri:'file:///android_asset/html/index.html"'} 
 //const test = require('./assets/html/index.html');
@@ -15,8 +15,7 @@ export default class App extends Component {
 
     }
 
-    componentDidMount(){
-      
+    componentDidMount(){ 
     }
      
     onWebViewMessage = (event) => {
@@ -76,6 +75,9 @@ export default class App extends Component {
   }
 
     render() {
+
+      
+
         if(Platform.OS === 'android'){
             return (
                 <WebView
@@ -86,20 +88,21 @@ export default class App extends Component {
                   style={{ marginTop: 20 }}
                   javaScriptEnabled={true}
                   domStorageEnabled={true}
-                  onMessage={this.onWebViewMessage}
+                  onMessage={this.onWebViewMessage} 
                 />
             )
           }else{
+             
             return(
               <WebView
-              ref={r => this.appWebview = r}
+                ref={r => this.appWebview = r}
                 style={{flex: 1}}
-                originWhitelist={['*']}
+                originWhitelist={['*']} 
                 source={renderHTML}
                 style={{ marginTop: 20 }}
                 javaScriptEnabled={true}
-                domStorageEnabled={true}
-                onMessage={this.onWebViewMessage}
+                domStorageEnabled={true} 
+                onMessage={this.onWebViewMessage} 
               />
             );
           } 

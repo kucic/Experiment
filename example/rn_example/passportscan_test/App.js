@@ -16,7 +16,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import ExampleApp from './cameratest'
+import ExampleApp from './passport/cameratest'
  
 const App: () => React$Node = () => {
   let camera = null;

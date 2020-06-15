@@ -12,6 +12,9 @@
     <button id="btnSend">통신하기IOS</button>
     <p id="result"></p>
 
+    <script src="https://stg-pay.sk-pay.co.kr/pages/js/v3/lib/crypto/encryptedUserAgent.js"></script>
+    <script src="https://stg-pay.sk-pay.co.kr/pages/skpay/SKpaySDK.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="webViewBridge.js?ver=4"></script>
     <script src="index.js"></script>
@@ -100,19 +103,13 @@
     </script>
     <script>
         $('#btnSend').on('click', function() {
-        $('#result').html('click')
-        
-        var option = {
-            url: '/movie.json'
-        }
+            $('#result').html('click')
 
-        // "getMovieList"는 react-native에서 받는 메서드 이름입니다.
-        window.webViewBridge.send('getMovieList', option, function(res) {
-            $('#result').html(JSON.stringify(res))
-        }, function(err) {
-            console.error(err)
+            var encryptedUserAgent = SKpaySDK.generateUserAgent();
+            $('#result').html(encryptedUserAgent)
+            console.log(encryptedUserAgent);  
+             
         })
-    })
     </script>
 </body>
 </html>

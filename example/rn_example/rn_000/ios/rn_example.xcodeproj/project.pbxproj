@@ -17,6 +17,10 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rn_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rn_exampleTests.m */; };
 		328C39DB3DDAD0D358E60762 /* libPods-rn_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4579A77CFF4D0A3988ED8E /* libPods-rn_example.a */; };
+		9B271E3F248DD48F0092E09C /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B271E3B248DD48F0092E09C /* movie.json */; };
+		9B271E40248DD48F0092E09C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B271E3C248DD48F0092E09C /* index.html */; };
+		9B271E41248DD48F0092E09C /* webViewBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B271E3D248DD48F0092E09C /* webViewBridge.js */; };
+		9B271E42248DD48F0092E09C /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B271E3E248DD48F0092E09C /* index.js */; };
 		A5A2B67FA9B651F5E4BB25F1 /* libPods-rn_example-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D84821C48F6CE1DD7C55ADAB /* libPods-rn_example-tvOSTests.a */; };
 		B59F533E5F1CC70BE42D1917 /* libPods-rn_example-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6197FADBC54FD1698BDE8D64 /* libPods-rn_example-tvOS.a */; };
 		BC66AF32D326FEE5E7135C7B /* libPods-rn_example-rn_exampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4796694DEA884EE5A7F840DB /* libPods-rn_example-rn_exampleTests.a */; };
@@ -62,6 +66,10 @@
 		6D7E91BD09C9B391181E2015 /* Pods-rn_example-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rn_example-tvOS/Pods-rn_example-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		79D973219B6A76578221D528 /* Pods-rn_example-rn_exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-rn_exampleTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_example-rn_exampleTests/Pods-rn_example-rn_exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4579A77CFF4D0A3988ED8E /* libPods-rn_example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B271E3B248DD48F0092E09C /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
+		9B271E3C248DD48F0092E09C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9B271E3D248DD48F0092E09C /* webViewBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = webViewBridge.js; sourceTree = "<group>"; };
+		9B271E3E248DD48F0092E09C /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		A41384941769DF28FDDBA2B9 /* Pods-rn_example-rn_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-rn_exampleTests.release.xcconfig"; path = "Target Support Files/Pods-rn_example-rn_exampleTests/Pods-rn_example-rn_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF14F1CF130EFA073072ADA7 /* Pods-rn_example-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_example-tvOSTests/Pods-rn_example-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D84821C48F6CE1DD7C55ADAB /* libPods-rn_example-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_example-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +133,7 @@
 		13B07FAE1A68108700A75B9A /* rn_example */ = {
 			isa = PBXGroup;
 			children = (
+				9B271E39248DD48F0092E09C /* external */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -161,7 +170,6 @@
 				BF14F1CF130EFA073072ADA7 /* Pods-rn_example-tvOSTests.debug.xcconfig */,
 				2CC398A5A79DFFCD2BC3FF11 /* Pods-rn_example-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -196,6 +204,26 @@
 				2D02E4901E0B4A5D006451C7 /* rn_example-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9B271E39248DD48F0092E09C /* external */ = {
+			isa = PBXGroup;
+			children = (
+				9B271E3A248DD48F0092E09C /* html */,
+			);
+			name = external;
+			path = rn_example/external;
+			sourceTree = "<group>";
+		};
+		9B271E3A248DD48F0092E09C /* html */ = {
+			isa = PBXGroup;
+			children = (
+				9B271E3B248DD48F0092E09C /* movie.json */,
+				9B271E3C248DD48F0092E09C /* index.html */,
+				9B271E3D248DD48F0092E09C /* webViewBridge.js */,
+				9B271E3E248DD48F0092E09C /* index.js */,
+			);
+			path = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9B271E40248DD48F0092E09C /* index.html in Resources */,
+				9B271E41248DD48F0092E09C /* webViewBridge.js in Resources */,
+				9B271E42248DD48F0092E09C /* index.js in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				9B271E3F248DD48F0092E09C /* movie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

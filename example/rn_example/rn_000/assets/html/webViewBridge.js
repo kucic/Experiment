@@ -54,9 +54,10 @@
          * react-native => javascript
          * react native에서 화면에 결과를 넘겨준다.
          */ 
-            window.document.addEventListener('message', function (e) {
+            document.addEventListener('message', function (e) {
+           // window.document.addEventListener('message', function (e) {
                 console.log("react native에서 메세지를 받음", JSON.parse(e.data));
-    
+                $('#result').html('ok get')
                 var message;
                 try {
                     message = JSON.parse(e.data)
